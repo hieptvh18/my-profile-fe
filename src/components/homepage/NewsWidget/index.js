@@ -1,4 +1,5 @@
 import React from "react";
+import './style.scss';
 
 const NewsWidget = (props) => {
     return (  <section id="myblog" className="pb-5">

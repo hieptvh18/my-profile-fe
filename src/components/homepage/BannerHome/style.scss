@@ -1,0 +1,112 @@
+main .banner {
+  .banner__right {
+    margin-bottom: 50px;
+    
+    .my-avatar {
+        position: relative;
+        width: 570px;
+        height: 570px;
+      }
+      
+      img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+  }
+
+  .banner__left p.intro {
+    color: #fff;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 30px;
+  }
+  .banner__left-introduce h1.im {
+    font-size: 70px;
+    font-weight: 600;
+  }
+  .banner__left-introduce .job {
+    color: var(--greenct);
+    font-weight: 600;
+  }
+  .banner__left-introduce .hire-me {
+    background: var(--greenct);
+    padding: 12px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 40px;
+    background: var(--greenct);
+    transition: opacity 0.5s ease-out;
+    /* opacity: 0; */
+    color: #fff;
+    text-align: center;
+  }
+  .banner__left-introduce .hire-me:hover {
+    background-position: 100% 0;
+    moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+
+    background-image: linear-gradient(
+      to right,
+      #009245,
+      #fcee21,
+      #00a8c5,
+      #d9e021
+    );
+    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+
+    cursor: pointer;
+  }
+  .banner__left-introduce .hello {
+    font-size: 43px;
+    font-weight: 600;
+  }
+
+  .my-avatar__item.item1,
+  .item2,.item3,.item4 {
+    position: absolute;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    padding: 18px;
+    border-radius: 15%;
+  }
+  .my-avatar__item.item1 {
+    top: 50px;
+    left: 0px;
+  }
+  .my-avatar__item.item2 {
+    top: 50px;
+    right: 0px;
+  }
+  .my-avatar__item.item3 {
+    bottom: 50px;
+    left: 0px;
+  }
+  .my-avatar__item.item4 {
+    bottom: 50px;
+    right: 0px;
+  }
+  .my-avatar__item.item1 img {
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .my-avatar__item.item2 img {
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .my-avatar__item img{
+    object-fit: cover;
+  }
+}

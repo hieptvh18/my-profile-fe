@@ -1,0 +1,72 @@
+
+/* ============ section about */
+#about {
+    /* background-image: linear-gradient(to right, #434343 0%, black 100%);
+      padding: 100px 20px; */
+  }
+  .about__left {
+  }
+  .about__left-experience {
+    border-radius: 15px;
+  }
+  .experience__title {
+    text-align: center;
+  }
+  .experience__title > .month {
+    font-size: 130px;
+    font-weight: 700;
+    color: #ffe600;
+  }
+  .experience__title > p {
+    font-size: 18px;
+    color: #fff;
+  }
+  .about__left-experience {
+    position: relative;
+    max-width: 350px;
+    padding: 130px 20px;
+    background: linear-gradient(180deg, #2e2c1f, #1b1b19);
+  }
+  .experience__detail {
+    position: absolute;
+    bottom: 20px;
+    right: -90px;
+    background: linear-gradient(to right, #3b3928, #272724);
+    border-radius: 15px;
+    padding: 20px;
+    border-inline-start: 3px solid #f8a100;
+  }
+  .about__right .title-advantage {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  .about__right-intro-advantage {
+    line-height: 30px;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .about__right-advantage-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about__right-advantage-items .items {
+    background: linear-gradient(
+      180deg,
+      rgba(94, 255, 0, 0.6),
+      rgba(31, 30, 28, 0.6) 67.59%
+    );
+    width: 27.33%;
+    // flex-basis: 28.33%;
+    border-radius: 12px;
+    margin: 0 15px 30px;
+  }
+  
+  .about__right-advantage-items .item {
+    padding: 40px;
+    background: #1f1e1d;
+    margin: 3px 3px 0;
+    text-align: center;
+    border-radius: 12px;
+  }

@@ -18,7 +18,7 @@
 html {
   scroll-behavior: smooth;
 }
-.wrapper {
+.App {
   max-width: 1200px;
   margin: 0 auto;
   /* background: #000; */
@@ -88,180 +88,6 @@ header .resume-download span {
 main {
   margin-top: 70px;
   color: #fff;
-}
-
-main .banner {
-}
-
-main .banner__right {
-  margin-bottom: 50px;
-}
-
-.banner__right .my-avatar {
-  position: relative;
-  width: 570px;
-  height: 570px;
-}
-
-main .banner__right img {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.banner__left p.intro {
-  color: #fff;
-  font-size: 16px;
-  line-height: 23px;
-  margin: 0 0 30px;
-}
-.banner__left-introduce h1.im {
-  font-size: 70px;
-  font-weight: 600;
-}
-.banner__left-introduce .job {
-  color: var(--greenct);
-  font-weight: 600;
-}
-.banner__left-introduce .hire-me {
-  background: var(--greenct);
-  padding: 12px 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0;
-  border-radius: 40px;
-  background: var(--greenct);
-  transition: opacity 0.5s ease-out;
-  /* opacity: 0; */
-  color: #fff;
-  text-align: center;
-}
-.banner__left-introduce .hire-me:hover {
-  background-position: 100% 0;
-  moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-
-  background-image: linear-gradient(
-    to right,
-    #009245,
-    #fcee21,
-    #00a8c5,
-    #d9e021
-  );
-  box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
-
-  cursor: pointer;
-}
-.banner__left-introduce .hello {
-  font-size: 43px;
-  font-weight: 600;
-}
-
-.my-avatar__item.item1,
-.item2 {
-  position: absolute;
-  background: #fff;
-  width: 100px;
-  height: 100px;
-  padding: 18px;
-  border-radius: 15%;
-}
-.my-avatar__item.item1 {
-  top: 50px;
-  left: 0px;
-}
-.my-avatar__item.item2 {
-  top: 50px;
-  right: 0px;
-}
-.my-avatar__item.item1 img {
-  border-radius: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.my-avatar__item.item2 img {
-  border-radius: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.banner__right .my-avatar {
-}
-/* ============ section about */
-#about {
-  /* background-image: linear-gradient(to right, #434343 0%, black 100%);
-    padding: 100px 20px; */
-}
-.about__left {
-}
-.about__left-experience {
-  border-radius: 15px;
-}
-.experience__title {
-  text-align: center;
-}
-.experience__title > .month {
-  font-size: 130px;
-  font-weight: 700;
-  color: #ffe600;
-}
-.experience__title > p {
-  font-size: 18px;
-  color: #fff;
-}
-.about__left-experience {
-  position: relative;
-  max-width: 350px;
-  padding: 130px 20px;
-  background: linear-gradient(180deg, #2e2c1f, #1b1b19);
-}
-.experience__detail {
-  position: absolute;
-  bottom: 20px;
-  right: -90px;
-  background: linear-gradient(to right, #3b3928, #272724);
-  border-radius: 15px;
-  padding: 20px;
-  border-inline-start: 3px solid #f8a100;
-}
-.about__right .title-advantage {
-  font-size: 48px;
-  color: #fff;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-.about__right-intro-advantage {
-  line-height: 30px;
-  font-size: 16px;
-  margin-bottom: 40px;
-}
-.about__right-advantage-items {
-  display: flex;
-  /* flex-wrap: wrap; */
-}
-.about__right-advantage-items .items {
-  background: linear-gradient(
-    180deg,
-    rgba(94, 255, 0, 0.6),
-    rgba(31, 30, 28, 0.6) 67.59%
-  );
-  flex-basis: 28.33%;
-  border-radius: 12px;
-  margin: 0 15px 30px;
-}
-
-.about__right-advantage-items .item {
-  padding: 40px;
-  background: #1f1e1d;
-  margin: 3px 3px 0;
-  text-align: center;
-  border-radius: 12px;
 }
 
 /* =========service section */
@@ -352,14 +178,6 @@ section#my-experiences{
     font-size: 18px;
     color: #d8d8d8;
 }
-
-/* ===========recent work */
-section#recent-work{
-    margin:140px 0 ;
-}
-
-
-
 
 /* =============section contact */
 section#contact{

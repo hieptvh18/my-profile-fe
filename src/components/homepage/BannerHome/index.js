@@ -1,5 +1,6 @@
 import React from "react";
 import 'animate.css';
+import './style.scss';
 
 const BannerHome = (props) => {
   return (
@@ -29,10 +30,16 @@ const BannerHome = (props) => {
         <div className="my-avatar">
           <img src="https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2l0ZXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="" />
           <div className="my-avatar__item item1">
-            <img src="../../assets/images/photoshop.svg" alt="" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="" />
           </div>
           <div className="my-avatar__item item2">
-            <img src="../../assets/images/illustrator.svg" alt="" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/985px-Laravel.svg.png" alt="" />
+          </div>
+          <div className="my-avatar__item item3">
+            <img src="https://www.nicepng.com/png/detail/222-2229785_magento-2-logo-magento-2-logo-png.png" alt="" />
+          </div>
+          <div className="my-avatar__item item4">
+            <img src="https://www.pngitem.com/pimgs/m/520-5202823_nodejs-node-js-logo-png-transparent-png.png" alt="" />
           </div>
         </div>
       </div>

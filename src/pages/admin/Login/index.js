@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import './style.scss';
 
 const Login = (props)=>{
+
+    const [email,setEmail] = useState([]);
+        
+
     return (
     <div className="animated bounceInDown">
     <div className="container">

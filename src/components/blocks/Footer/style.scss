@@ -1,0 +1,36 @@
+// reset
+ul {
+  padding: 0;
+}
+
+footer {
+  color: #fff;
+
+  form.form-newsletter {
+    .box-email {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+
+      input[type="email"] {
+        background-color: #232925;
+        height: 50px;
+        color: #fff;
+        padding: 6px 15px;
+        border: 1px solid #222623;
+        box-shadow: none;
+        outline: none;
+      }
+      button {
+        position: absolute;
+        right: 20px;
+        top: 28%;
+        background: none;
+        border: none;
+        outline: none;
+        color: #fff;
+      }
+    }
+  }
+
+}

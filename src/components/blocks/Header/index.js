@@ -1,6 +1,7 @@
 // import './style.scss';
 import React from "react";
 import 'primeicons/primeicons.css';
+import logo from '../../../assets/images/logo.png'
 
 const Header = (props) => {
     return (
@@ -10,7 +11,7 @@ const Header = (props) => {
             href=""
             className="logo d-flex justify-content-around align-items-center">
             <div className="logo__image mr-2">
-              <img src="../assets/images/logo.png" alt="logo" />
+              <img src={logo} alt="logo" />
             </div>
             <span className="logo__text text-light ml-2">Hiep</span>
           </a>

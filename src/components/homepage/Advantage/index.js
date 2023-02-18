@@ -1,4 +1,5 @@
 import React from "react";
+import './style.scss';
 
 const Advantage = (props)=>{
     return (
@@ -23,7 +24,7 @@ const Advantage = (props)=>{
               account the system and expound the actual and praising pain was
               born.
             </p>
-            <div className="about__right-advantage-items row">
+            <div className="about__right-advantage-items">
               <div className="items">
                 <div className="item">
                   <div className="item-percent">100%</div>

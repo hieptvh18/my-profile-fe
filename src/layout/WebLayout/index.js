@@ -24,7 +24,7 @@ const WebLayout = () => {
         btnScrollTop.style.display = "none";
       }
     };
-  });
+  },[]);
 
   //click btn
   const goToTop = () => {
