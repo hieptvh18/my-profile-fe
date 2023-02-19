@@ -1,4 +1,5 @@
 import React from "react";
+import './style.scss';
 
 const Contact = (props)=>{
     return (<section id="contact">

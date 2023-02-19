@@ -4,6 +4,8 @@ import Footer from "../../components/blocks/Footer";
 import HomePage from "../../pages/client/Homepage";
 import ReactDOM from "react-dom";
 import './style.css'; // style theme
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 const WebLayout = () => {
 
@@ -44,7 +46,7 @@ const WebLayout = () => {
         <Footer />
       </footer>
       <button id="scroll-top-btn" onClick={goToTop}>
-        ^
+        <FontAwesomeIcon icon={faArrowUp} />
       </button>
     </>
   );

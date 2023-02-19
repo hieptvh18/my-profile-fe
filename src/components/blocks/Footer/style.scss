@@ -1,9 +1,12 @@
 // reset
+
 ul {
   padding: 0;
 }
 
 footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
   color: #fff;
 
   form.form-newsletter {

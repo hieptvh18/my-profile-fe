@@ -1,11 +1,13 @@
 import React from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import './style.scss';
 
 const Service = (props) =>{
-    return (<section id="service" className="mt-2 mb-5">
+    return (<section id="service" className="">
     <div className="row justify-content-center">
       <div className="service-title col-6">
-        <h2 className="title">Popular Services</h2>
+        <h2 className="title text-center">Popular Services</h2>
         <p className="service-title__desc text-center intro-title">
           Must explain to you how all this mistaken idea of denouncing
           pleasure born and give you a complete account the system
@@ -36,6 +38,7 @@ const Service = (props) =>{
             pleasure born and give you complete account the system.
           </p>
           <button className="learn-more-service-item">
+            <FontAwesomeIcon icon={faArrowRight}/>
             <span>Learn more</span>
           </button>
         </div>
@@ -49,6 +52,7 @@ const Service = (props) =>{
             pleasure born and give you complete account the system.
           </p>
           <button className="learn-more-service-item">
+            <FontAwesomeIcon icon={faArrowRight}/>
             <span>Learn more</span>
           </button>
         </div>
@@ -62,6 +66,7 @@ const Service = (props) =>{
             pleasure born and give you complete account the system.
           </p>
           <button className="learn-more-service-item">
+            <FontAwesomeIcon icon={faArrowRight}/>
             <span>Learn more</span>
           </button>
         </div>

@@ -1,0 +1,106 @@
+#myblog-wrapper {
+  background: var(--bg-2);
+  padding: 50px 0;
+}
+section#myblog {
+  max-width: var(--max-width);
+  margin: 0 auto;
+
+  .myblog-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .myblog-title {
+      font-size: 40px;
+    }
+    .myblog-category {
+      display: flex;
+      justify-content: space-between;
+      a.link {
+        padding: 10px 15px;
+        // font-size: 18px;
+        color: #fff;
+        &:hover {
+          color: var(--oragect) !important;
+          border-bottom: solid 3px var(--oragect);
+        }
+      }
+      a.link.active {
+        color: var(--oragect) !important;
+        border-bottom: solid 3px var(--oragect);
+      }
+    }
+  }
+  .blog-list {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 140px;
+    .blog-item {
+      position: relative;
+      width: 23%;
+      height: 300px;
+    //   overflow: hidden;
+      object-fit: cover;
+      margin-right: 30px;
+      background: var(--bg-1);
+      border-radius: 13px;
+      .img-blog {
+        position: absolute;
+        top: -50px;
+        left: 0;
+        right: 0;
+        width: 72%;
+        margin: auto;
+        overflow: hidden;
+        img {
+          width: 100%;
+          border-radius: 5px;
+        }
+        
+      }
+      .blog-item__content{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        left: 20px;
+        right: 20px;
+        margin: auto;
+
+        .blog-title{
+            margin: 20px 0;
+            font-size: 20px;
+        }
+        .blog-item__tag{
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            .tag__category,.tag__created-at{
+                padding: 4px 13px;
+                border: 1px solid var(--oragect);
+                border-radius: 20px;
+            }
+            .tag_created-at{
+    
+            }
+        }
+        .blog-detail-btn{
+            padding: 10px 35px;
+            color: var(--oragect);
+            border-radius: 5px;
+            transition: .4s;
+            border: 1px solid var(--oragect);
+            &:hover{
+                background: var(--oragect);
+                color: #fff;
+                transition: .4s;
+            }
+        }
+      }
+    }
+    .blog-item:last-child {
+      margin-right: 0;
+    }
+    
+  }
+}

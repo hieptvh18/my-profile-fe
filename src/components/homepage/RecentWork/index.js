@@ -3,7 +3,7 @@ import "./style.scss";
 import Slider from "react-slick";
 
 const RecentWork = (props) => {
-  const sliderSettings = {
+  const settings = {
     dots: true,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -47,7 +47,7 @@ const RecentWork = (props) => {
         </div>
       </div>
       <div className="recent-work__detail">
-        <Slider {...sliderSettings}>
+        {/* <Slider {...settings}> */}
 
           <div className="recent-item">
             <div className="box-img-recent">
@@ -88,7 +88,7 @@ const RecentWork = (props) => {
             </h4>
             <span className="work-sub-name">Web developer</span>
           </div>
-        </Slider>
+        {/* </Slider> */}
       </div>
     </section>
   );

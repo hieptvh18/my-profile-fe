@@ -1,5 +1,12 @@
 import React from "react";
+import ReactDOM from 'react-dom'
 import "./style.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import FormNewsletter from "./FormNewsletter";
+import { faFaceAngry } from "@fortawesome/free-solid-svg-icons";
+import Logo from '../../../assets/images/logo.png';
+import 'primeicons/primeicons.css';
+        
 
 const Footer = (props) => {
   return (
@@ -9,10 +16,10 @@ const Footer = (props) => {
           <div className="logo-wrapper">
             <a
               href=""
-              className="logo d-flex justify-content-around align-items-center"
+              className="logo d-flex align-items-center"
             >
               <div className="logo__image mr-2">
-                <img src="./public/assets/images/logo.png" alt="logo" />
+                <img src={Logo} alt="logo" />
               </div>
               <span className="logo__text text-light ml-2">Hiep</span>
             </a>
@@ -23,8 +30,7 @@ const Footer = (props) => {
           </p>
           <div className="footer-social">
             <a href="" className="footer-social__item">
-              {" "}
-              icon1{" "}
+            <i className="pi pi-spin pi-spinner" style={{ fontSize: '2rem' }}></i>
             </a>
             <a href="" className="footer-social__item">
               {" "}
@@ -84,20 +90,12 @@ const Footer = (props) => {
             Must explain to you how all this mistaken idea pleasure born and
             give you a complete account.
           </p>
-          <form action="" className="form-newsletter">
-            <div className="box-email">
-              <input
-                type="email"
-                name="newsletter"
-                placeholder="Email Address *"
-              />
-            <button type="submit">Send</button>
-            </div>
-          </form>
+          {/* form newsletter */}
+          <FormNewsletter/>
         </div>
       </div>
       <div className="footer-bottom text-center p-4">
-        <span> Copyright © 2022 Elito. All rights reserved. </span>
+        <span> Copyright © 2022 Hieptvh. All rights reserved. </span>
       </div>
     </footer>
   );

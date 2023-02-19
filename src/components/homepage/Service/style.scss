@@ -1,0 +1,80 @@
+section#service {
+    max-width: var(--max-width);
+    margin: 100px auto;
+    margin-bottom: 140px;
+  .service-nav__item {
+    margin-right: 20px;
+  }
+  .service-nav__item:last-child {
+    margin-right: 0;
+  }
+  .learn-more-service-item {
+    padding: 10px 15px;
+    svg {
+      transition: all 0.4;
+      margin-right: 10px;
+    }
+    &:hover {
+      svg {
+        transform: translateX(10px);
+        transition: all 0.5s;
+      }
+    }
+  }
+
+#service .service-title .title {
+    font-size: 48px;
+    line-height: 55px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 20px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 110px;
+    text-align: center;
+  }
+  .service-tab {
+  }
+  .service-tab__nav {
+  }
+  .service-nav__item > a {
+    cursor: pointer;
+    background: #373737;
+    border-radius: 40px;
+    padding: 13px 40px;
+    font-weight: 500;
+    font-size: 19px;
+  }
+  .service-tab__items {
+    column-gap: 20px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .service-tab__items .item {
+    background: #232221;
+    border: 2px solid #373737;
+    border-radius: 12px;
+    text-align: center;
+    padding: 50px 40px;
+    margin-bottom: 30px;
+  }
+  .service-tab__items .service-item__desc {
+    margin: 40px 0;
+    line-height: 25px;
+    font-size: 16px;
+  }
+  .service-tab__items .service-item__title {
+    font-weight: 600;
+  }
+  .learn-more-service-item {
+    background: none;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+  }
+  
+}
+

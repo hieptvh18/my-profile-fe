@@ -1,6 +1,12 @@
 
 /* ============ section about */
+#about-wrapper{
+  background: var(--bg-2);
+  padding: 50px 0 50px 0;
+}
 #about {
+  max-width: var(--max-width);
+    margin: 0 auto;
     /* background-image: linear-gradient(to right, #434343 0%, black 100%);
       padding: 100px 20px; */
   }
@@ -25,7 +31,7 @@
     position: relative;
     max-width: 350px;
     padding: 130px 20px;
-    background: linear-gradient(180deg, #2e2c1f, #1b1b19);
+    background: linear-gradient(180deg, #2e2c1f, var(--bg-1));
   }
   .experience__detail {
     position: absolute;
@@ -55,7 +61,7 @@
     background: linear-gradient(
       180deg,
       rgba(94, 255, 0, 0.6),
-      rgba(31, 30, 28, 0.6) 67.59%
+      var(--bg-1) 67.59%
     );
     width: 27.33%;
     // flex-basis: 28.33%;
@@ -65,8 +71,13 @@
   
   .about__right-advantage-items .item {
     padding: 40px;
-    background: #1f1e1d;
+    background: var(--bg-1);
     margin: 3px 3px 0;
     text-align: center;
     border-radius: 12px;
+    &:hover {
+      
+        background: #000;
+      
+    }
   }

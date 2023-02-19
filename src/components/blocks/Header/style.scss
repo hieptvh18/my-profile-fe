@@ -1,0 +1,55 @@
+header {
+  max-width: var(--max-width);
+  padding: 10px 0px;
+  margin: 0 auto;
+}
+
+header .logo__image {
+  width: 63px;
+  max-width: 170px;
+  margin-right: 9px;
+}
+header img {
+  width: 100%;
+}
+
+header .logo__text {
+  color: #fff;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+.navbar ul > li > a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.navbar ul > li > a.active{
+  color: var(--oragect) !important;
+  border-bottom: solid 3px var(--oragect);
+}
+.navbar ul > li > a:hover {
+  color: var(--oragect) !important;
+  border-bottom: solid 3px var(--oragect);
+}
+header .resume-download {
+}
+
+header .resume-download button {
+  padding: 12px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 40px;
+  background: var(--oragect);
+  transition: opacity 0.5s ease-out;
+  /* opacity: 0; */
+  color: #fff;
+  text-align: center;
+}
+header .resume-download span {
+  font-size: 14px;
+}

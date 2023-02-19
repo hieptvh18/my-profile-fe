@@ -1,6 +1,7 @@
 /* ===========recent work */
 section#recent-work{
-    margin:140px 0 ;
+    max-width: var(--max-width);
+    margin:140px auto ;
 
     .recent-work__detail{
         display: flex;
@@ -21,12 +22,13 @@ section#recent-work{
             color: #d8d8d8 ;
         }
         .box-img-recent{
+            &:hover img{
+                transform: scale(1.3);
+                transition: all .3s;
+            }
             overflow: hidden;
         }
-        &:hover img{
-            transform: scale(1.3);
-            transition: all .3s;
-        }
+        
     }
     .recent-item img{
         width: 100%;

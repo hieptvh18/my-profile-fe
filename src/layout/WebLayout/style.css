@@ -3,8 +3,15 @@
 
 /* create variable color custom */
 :root {
-  --greenct: #41b362;
+  --oragect: #FF5722;
+  --bg-1:#262626;
+  --bg-2:#1F1F1F;
+  --greenct: #2ECC71;
+
+  /* max witdth medium display */
+  --max-width:1200px;
 }
+
 
 /* reset value default */
 * {
@@ -19,68 +26,15 @@ html {
   scroll-behavior: smooth;
 }
 .App {
-  max-width: 1200px;
   margin: 0 auto;
-  /* background: #000; */
-  /* padding: 0px 100px; */
 }
 
 body {
   /* background-image: linear-gradient(to right, #00b4db, #0083b0); */
   /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
-  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-
+  /* background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+  background: #262626;
   /* overflow: hidden; */
-  height: 2000px;
-}
-
-header {
-  padding: 10px 0px;
-}
-
-header .logo__image {
-  width: 63px;
-  max-width: 170px;
-  margin-right: 9px;
-}
-header img {
-  width: 100%;
-}
-
-header .logo__text {
-  color: #fff;
-  cursor: pointer;
-  font-size: 28px;
-  font-weight: 700;
-  text-decoration: none !important;
-}
-
-.navbar ul > li > a {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-}
-.navbar ul > li > a:hover {
-  border-bottom: solid 3px var(--greenct);
-}
-header .resume-download {
-}
-
-header .resume-download button {
-  padding: 12px 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0;
-  border-radius: 40px;
-  background: var(--greenct);
-  transition: opacity 0.5s ease-out;
-  /* opacity: 0; */
-  color: #fff;
-  text-align: center;
-}
-header .resume-download span {
-  font-size: 14px;
 }
 
 /* ============main content */
@@ -90,180 +44,21 @@ main {
   color: #fff;
 }
 
-/* =========service section */
-#service{
-    margin-bottom: 140px;
-}
-#service .service-title .title{
-    font-size: 48px;
-    line-height: 55px;
-    font-family: Inter,sans-serif;
-    font-weight: 700;
-    color: #fff;
-    padding-bottom: 20px;
-    position: relative;
-    margin: 0 auto;
-    margin-top: 110px;
-    text-align: center;
-}
-.service-tab{
-
-}
-.service-tab__nav{
-    
-}
-.service-nav__item>a{
-    cursor: pointer;
-    background: #373737;
-    border-radius: 40px;
-    padding: 13px 40px;
-    font-weight: 500;
-    font-size: 19px;
-}
-.service-tab__items{
-    column-gap: 20px;
-    text-align: center;
-    margin-top: 30px;
-}
-.service-tab__items .item{
-    background: #232221;
-    border: 2px solid #373737;
-    border-radius: 12px;
-    text-align: center;
-    padding: 50px 40px;
-    margin-bottom: 30px
-}
-.service-tab__items .service-item__desc{
-    margin: 40px 0;
-    line-height: 25px;
-    font-size: 16px;
-}
-.service-tab__items .service-item__title{
-    font-weight: 600;
-}
-.learn-more-service-item{
-    background: none;
-    color: #fff;
-    font-size: 16px;
-    border: none;
-    outline: none !important;
-    cursor: pointer;
-}
-
-
-/* ===============my experiences */
-section#my-experiences{
-    margin-bottom: 140px;
-}
-#my-experiences .exp-item{
-    background: #282828;
-    border-radius: 10px;
-    padding: 12px 70px;
-}
-#my-experiences .exp-item:hover{
-    border: .3px solid rgb(205, 205, 205);
-    transition: .5;
-}
-#my-experiences .exp-item .year-range{
-    font-size: 25px;
-    font-weight: 600;
-}
-.title{
-    font-size: 48px;
-    line-height: 55px;
-    font-family: Inter,sans-serif;
-    font-weight: 700;
-}
-.intro-title{
-    font-size: 18px;
-    color: #d8d8d8;
-}
-
-/* =============section contact */
-section#contact{
-    margin-bottom: 140px;
-}
-#contact .form-contact{
-    background: #222121;
-    padding: 60px 65px 30px;
-    border-radius: 5px;
-    border: 1px solid #464646;
-}
-#contact .contact-content{
-    display: flex;
-    column-gap: 30px;
-}
-#contact input,select, textarea{
-    background: none;
-    outline: none;
-    border: none;
-
-    background: transparent;
-    width: 100%;
-    
-    border: 0;
-    border-bottom: 1px solid #464646;
-    border-radius: 0;
-    box-shadow: none!important;
-    padding-left: 0;
-    color: #fff ;
-}
-#contact input:focus,select:focus, textarea:focus{
-    border-bottom: 1px solid #fcee21;
-}
-#contact input,select, textarea:focus{
-    background: none;
-}
-#contact input,select{
-    height: 50px;
-}
-#contact select option{
-    background: rgb(54, 53, 53);
-}
-
-.btn-submit-contact{
-    background: var(--greenct);
-    color: #fff;
-    border: none;
-    border-radius: 40px;
-    padding: 15px 30px;
-    cursor: pointer;
-}
-
-#contact > div.contact-content > div.contact__right.col-12.col-lg-5 > div:nth-child(n){
-    background: #222121;
-
-    box-shadow: 0 10px 40px 0 rgb(50 50 50 / 10%);
-    padding: 33px 40px;
-    margin-bottom: 30px;
-    border: 1px solid #464646;
-    border-radius: 5px;
-}
-.contact__right .icon{
-    width: 90px;
-    height: 90px;
-    background: #2e2e2e;
-    line-height: 90px;
-    border-radius: 50%;
-    box-shadow: 0 10px 40px 0 rgb(50 50 50 / 10%);
-    text-align: center;
-    margin-right: 20px;
-    align-items: center;
-}
-
 /* ====scroll top btn=== */
 #scroll-top-btn{
     /* display: none; */
+    width: 50px;
+    height: 50px;
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
+    background-color: rgba(18, 72, 180, 0.318); /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 50%; /* Rounded corners */
     font-size: 18px; /* Increase font size */
 }

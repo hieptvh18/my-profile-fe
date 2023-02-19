@@ -1,0 +1,34 @@
+
+/* ===============my experiences */
+#my-experiences-wrapper{
+    background: var(--bg-2);
+}
+section#my-experiences{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    margin-bottom: 140px;
+    padding: 100px 0;
+}
+#my-experiences .exp-item{
+    background: #282828;
+    border-radius: 10px;
+    padding: 12px 70px;
+}
+#my-experiences .exp-item:hover{
+    border: .3px solid var(--oragect);
+    transition: .5;
+}
+#my-experiences .exp-item .year-range{
+    font-size: 25px;
+    font-weight: 600;
+}
+.title{
+    font-size: 48px;
+    line-height: 55px;
+    font-family: Inter,sans-serif;
+    font-weight: 700;
+}
+.intro-title{
+    font-size: 18px;
+    color: #d8d8d8;
+}

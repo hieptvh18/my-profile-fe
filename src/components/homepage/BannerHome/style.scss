@@ -1,4 +1,6 @@
 main .banner {
+  max-width: var(--max-width);
+  margin: 0 auto;
   .banner__right {
     margin-bottom: 50px;
     
@@ -28,39 +30,33 @@ main .banner {
     font-weight: 600;
   }
   .banner__left-introduce .job {
-    color: var(--greenct);
+    color: var(--oragect);
     font-weight: 600;
   }
   .banner__left-introduce .hire-me {
-    background: var(--greenct);
+    background: var(--oragect);
     padding: 12px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 0;
     border-radius: 40px;
-    background: var(--greenct);
+    background: var(--oragect);
     transition: opacity 0.5s ease-out;
     /* opacity: 0; */
     color: #fff;
     text-align: center;
   }
-  .banner__left-introduce .hire-me:hover {
-    background-position: 100% 0;
-    moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-
-    background-image: linear-gradient(
-      to right,
-      #009245,
-      #fcee21,
-      #00a8c5,
-      #d9e021
-    );
-    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
-
+  .banner__left-introduce .hire-me{
+    .icon-hireme{
+      transition: all .3s;
+    }
+    &:hover{
+      .icon-hireme{
+        transition: all .3s;
+        transform: translateX(5px);
+      }
+    }
     cursor: pointer;
   }
   .banner__left-introduce .hello {
