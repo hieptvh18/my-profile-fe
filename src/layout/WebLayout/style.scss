@@ -62,3 +62,21 @@ main {
     border-radius: 50%; /* Rounded corners */
     font-size: 18px; /* Increase font size */
 }
+
+
+/* ===============setting========= */
+.settings{
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  top: 40vh;
+  right: 10px;
+  .settings-icon{
+    cursor: pointer;
+    font-size: 30px;
+    &:hover{
+      color: rgb(206, 206, 206);
+      transition: all .2s;
+    }
+  }
+}

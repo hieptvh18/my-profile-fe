@@ -90,6 +90,8 @@ section#myblog {
             border-radius: 5px;
             transition: .4s;
             border: 1px solid var(--oragect);
+            display: flex;
+            justify-content: center;
             &:hover{
                 background: var(--oragect);
                 color: #fff;

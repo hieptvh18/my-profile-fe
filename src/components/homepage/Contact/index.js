@@ -1,5 +1,8 @@
 import React from "react";
 import './style.scss';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot,faEnvelope,faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faMailchimp, faFontAwesome } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = (props)=>{
     return (<section id="contact">
@@ -62,22 +65,22 @@ const Contact = (props)=>{
         <div className="contact-right__item">
           <h4 className="contact-item__title">155 Cau Giay, Ha Noi</h4>
           <div className="d-flex align-items-center">
-            <div className="icon icon-address">icon</div>
+            <div className="icon icon-address"><FontAwesomeIcon color="#fff" fontSize={"40px"} icon={faLocationDot}/></div>
             <span className="sub-title_contact-title">Office Address</span>
           </div>
         </div>
         <div className="contact-right__item">
           <h4 className="contact-item__title">155 Cau Giay, Ha Noi</h4>
           <div className="d-flex align-items-center">
-            <div className="icon icon-address">icon</div>
+            <div className="icon icon-address"><FontAwesomeIcon color="#fff" fontSize={"40px"} icon={faEnvelope} /></div>
             <span className="sub-title_contact-title">Office Address</span>
           </div>
         </div>
         <div className="contact-right__item">
-          <h4 className="contact-item__title">155 Cau Giay, Ha Noi</h4>
+          <h4 className="contact-item__title">+84 89581167</h4>
           <div className="d-flex align-items-center">
-            <div className="icon icon-address">icon</div>
-            <span className="sub-title_contact-title">Office Address</span>
+            <div className="icon icon-address"><FontAwesomeIcon color="#fff" fontSize={"40px"} icon={faPhone}/></div>
+            <span className="sub-title_contact-title">Phone Number</span>
           </div>
         </div>
       </div>

@@ -3,6 +3,9 @@ section#recent-work{
     max-width: var(--max-width);
     margin:140px auto ;
 
+    .recent-work__top-left{
+        width: 100%;
+    }
     .recent-work__detail{
         display: flex;
         justify-content: space-between;
@@ -34,5 +37,11 @@ section#recent-work{
         width: 100%;
         object-fit: cover;
         transition: all .3s;
+    }
+
+    .recent-work__right{
+        .icon-recent{
+
+        }
     }
 }

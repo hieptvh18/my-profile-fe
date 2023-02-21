@@ -5,14 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FormNewsletter from "./FormNewsletter";
 import { faFaceAngry } from "@fortawesome/free-solid-svg-icons";
 import Logo from '../../../assets/images/logo.png';
-import 'primeicons/primeicons.css';
+import { faTwitter, faFacebook, faInstagram, faGithub,faGoogle,faSkype, faFontAwesome } from '@fortawesome/free-brands-svg-icons';
         
 
 const Footer = (props) => {
   return (
     <footer>
       <div className="row footer-content">
-        <div className="footer-col footer-myself col-3">
+        <div className="footer-col footer-myself col-4">
           <div className="logo-wrapper">
             <a
               href=""
@@ -24,29 +24,25 @@ const Footer = (props) => {
               <span className="logo__text text-light ml-2">Hiep</span>
             </a>
           </div>
-          <p className="footer-col__intromyself">
+          <p className="footer-col__intromyself col-10">
             Welcome and open yourself to your truest love this year with us!
             With the Release Process
           </p>
           <div className="footer-social">
-            <a href="" className="footer-social__item">
-            <i className="pi pi-spin pi-spinner" style={{ fontSize: '2rem' }}></i>
+            <a href="" className="footer-social__item" title="facebook">
+            <FontAwesomeIcon color="#fff" fontSize={"24px"} icon={faFacebook}/>
             </a>
-            <a href="" className="footer-social__item">
-              {" "}
-              icon1{" "}
+            <a href="" className="footer-social__item" title="Google">
+            <FontAwesomeIcon color="#fff" fontSize={"24px"} icon={faGoogle}/>
             </a>
-            <a href="" className="footer-social__item">
-              {" "}
-              icon1{" "}
+            <a href="" className="footer-social__item" title="github">
+            <FontAwesomeIcon color="#fff" fontSize={"24px"} icon={faGithub}/>
             </a>
-            <a href="" className="footer-social__item">
-              {" "}
-              icon1{" "}
+            <a href="" className="footer-social__item" title="Twittwer">
+            <FontAwesomeIcon color="#fff" fontSize={"24px"} icon={faTwitter}/>
             </a>
-            <a href="" className="footer-social__item">
-              {" "}
-              icon1{" "}
+            <a href="" className="footer-social__item" title="Skype">
+            <FontAwesomeIcon color="#fff" fontSize={"24px"} icon={faSkype}/>
             </a>
           </div>
         </div>
@@ -54,33 +50,33 @@ const Footer = (props) => {
           <h4 className="footer-col__item-title">Navigation</h4>
           <ul className="navigation">
             <li>
-              <a>About us</a>
+              <a href="#">About us</a>
             </li>
             <li>
-              <a>Contact us</a>
+              <a href="#">Contact us</a>
             </li>
             <li>
-              <a>Projects</a>
+              <a href="#">Projects</a>
             </li>
             <li>
-              <a className="active">Recent Post</a>
+              <a href="#" className="active">Recent Post</a>
             </li>
           </ul>
         </div>
-        <div className="footer-col col-3">
+        <div className="footer-col col-2">
           <h4 className="footer-col__item-title">All Service</h4>
           <ul className="all-service">
             <li>
-              <a>Web Design</a>
+              <a href="#">Web Design</a>
             </li>
             <li>
-              <a>Web developer</a>
+              <a href="#">Web developer</a>
             </li>
             <li>
-              <a>Projects</a>
+              <a href="#">Projects</a>
             </li>
             <li>
-              <a className="active">Recent Post</a>
+              <a href="#" className="active">Recent Post</a>
             </li>
           </ul>
         </div>
@@ -95,7 +91,7 @@ const Footer = (props) => {
         </div>
       </div>
       <div className="footer-bottom text-center p-4">
-        <span> Copyright © 2022 Hieptvh. All rights reserved. </span>
+        <span> Copyright © 2023 Hieptvh. All rights reserved. </span>
       </div>
     </footer>
   );

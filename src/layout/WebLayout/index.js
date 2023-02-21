@@ -3,9 +3,9 @@ import Header from "../../components/blocks/Header";
 import Footer from "../../components/blocks/Footer";
 import HomePage from "../../pages/client/Homepage";
 import ReactDOM from "react-dom";
-import './style.css'; // style theme
+import './style.scss'; // style theme
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp,faGears } from "@fortawesome/free-solid-svg-icons";
 
 const WebLayout = () => {
 
@@ -36,18 +36,24 @@ const WebLayout = () => {
 
   return (
     <>
-      <header>
-        <Header />
-      </header>
+    <div className="header-wrapper">
+      <Header />
+    </div>
       <main>
         <HomePage />
       </main>
       <footer>
         <Footer />
       </footer>
+      
+      {/* scroll element */}
       <button id="scroll-top-btn" onClick={goToTop}>
         <FontAwesomeIcon icon={faArrowUp} />
       </button>
+      {/* setting element */}
+      <div className="settings">
+        <FontAwesomeIcon className="settings-icon" icon={faGears} color="#fff" />
+      </div>
     </>
   );
 };

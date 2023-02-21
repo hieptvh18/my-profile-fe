@@ -16,7 +16,7 @@ const BannerHome = (props) => {
             Im Hiep Tran.
           </h1>
           <h4 className="job animate__animated animate__backInLeft animate__delay-1s mt-4 mb-4">
-            Backend/Fontend Developer
+            I am Hacker Viet Nam
           </h4>
           <p className="intro col-6 col-md-6 col-lg-9">
             Must explain to how all this mistaken idea denouncing pleasure pain

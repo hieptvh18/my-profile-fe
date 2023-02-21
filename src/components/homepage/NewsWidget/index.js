@@ -53,10 +53,10 @@ const NewsWidget = (props) => {
               />
             </div>
             <div className="blog-item__content">
-            <div className="blog-item__tag">
+              <div className="blog-item__tag">
                 <span className="tag__category">Design</span>
-                <span className="tag__created-at">Design</span>
-              </div>
+                <span className="tag__created-at"><FontAwesomeIcon icon={faTimesSquare} /> 13 Jan 2022</span>
+                              </div>
 
               <h3 className="blog-title">The title blog</h3>
               <a href="" className="blog-detail-btn">
@@ -72,9 +72,11 @@ const NewsWidget = (props) => {
               />
             </div>
             <div className="blog-item__content">
-            <div className="blog-item__tag">
+              <div className="blog-item__tag">
                 <span className="tag__category">Design</span>
-                <span className="tag__created-at">Design</span>
+                <span className="tag__created-at">
+                  <FontAwesomeIcon icon={faTimesSquare} /> 13 Jan 2022
+                </span>
               </div>
 
               <h3 className="blog-title">The title blog</h3>
@@ -93,7 +95,9 @@ const NewsWidget = (props) => {
             <div className="blog-item__content">
               <div className="blog-item__tag">
                 <span className="tag__category">Design</span>
-                <span className="tag__created-at">Design</span>
+                <span className="tag__created-at">
+                  <FontAwesomeIcon icon={faTimesSquare} /> 13 Jan 2022
+                </span>
               </div>
               <h3 className="blog-title">The title blog</h3>
               <a href="" className="blog-detail-btn">
@@ -111,7 +115,9 @@ const NewsWidget = (props) => {
             <div className="blog-item__content">
               <div className="blog-item__tag">
                 <span className="tag__category">Design</span>
-                <span className="tag__created-at"><FontAwesomeIcon icon={faTimesSquare} /> 13 Jan 2022</span>
+                <span className="tag__created-at">
+                  <FontAwesomeIcon icon={faTimesSquare} /> 13 Jan 2022
+                </span>
               </div>
 
               <h3 className="blog-title">The title blog</h3>

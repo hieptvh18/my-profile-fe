@@ -7,7 +7,32 @@ ul {
 footer {
   max-width: var(--max-width);
   margin: 0 auto;
+  padding-top: 30px;
   color: #fff;
+
+  .logo-wrapper {
+    margin-bottom: 30px;
+    .logo__text {
+      font-size: 30px;
+      font-weight: 600;
+      margin-left: 10px;
+    }
+  }
+
+  .footer-myself {
+  }
+  .footer-col__intromyself {
+    line-height: 30px;
+  }
+  ul.navigation,
+  ul.all-service {
+    line-height: 35px;
+    margin-top: 30px;
+  }
+  .intro {
+    line-height: 30px;
+    margin-top: 30px;
+  }
 
   form.form-newsletter {
     .box-email {
@@ -33,6 +58,40 @@ footer {
         outline: none;
         color: #fff;
       }
+    }
+  }
+  .footer-social {
+    .footer-social__item {
+      margin-right: 9px;
+      &:hover {
+        svg {
+          color: var(--oragect);
+        }
+      }
+    }
+  }
+  ul > li {
+    position: relative;
+    a {
+      color: #fff;
+      &:hover {
+        color: var(--oragect);
+        &::before{
+          color: var(--oragect);
+        }
+      }
+      margin-left: 20px;
+    }
+    &::before {
+      display: block;
+      content: "";
+      background-color: #fff;
+      width: 5px;
+      height: 1px;
+      position: absolute;
+      left: 0;
+      top: 17px;
+      transition: all 0.3s;
     }
   }
 

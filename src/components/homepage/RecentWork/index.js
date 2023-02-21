@@ -1,6 +1,8 @@
 import React from "react";
 import "./style.scss";
 import Slider from "react-slick";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 const RecentWork = (props) => {
   const settings = {
@@ -34,16 +36,16 @@ const RecentWork = (props) => {
 
   return (
     <section id="recent-work">
-      <div className="recent-work__top d-flex justify-content-center">
+      <div className="recent-work__top d-flex justify-content-center align-items-center">
         <div className="recent-work__top-left">
           <h2 className="title">Recent Work.</h2>
-          <p className="intro-title">
+          <p className="intro-title col-10">
             Must explain to you how all this mistaken idea pleasure born and
             give you a complete account.
           </p>
         </div>
         <div className="recent-work__right">
-          <div className="icon-recent">icon</div>
+          <div className="icon-recent"><FontAwesomeIcon fontSize={"50px"} color="#fff" icon={faCode} /></div>
         </div>
       </div>
       <div className="recent-work__detail">

@@ -45,6 +45,11 @@ section#service {
     padding: 13px 40px;
     font-weight: 500;
     font-size: 19px;
+    &:hover{
+      background: var(--oragect);
+      color: #fff;
+      transition: all .3s;
+    }
   }
   .service-tab__items {
     column-gap: 20px;
@@ -74,6 +79,10 @@ section#service {
     border: none;
     outline: none !important;
     cursor: pointer;
+  }
+  a.active{
+    color: #fff;
+    background: var(--oragect);
   }
   
 }

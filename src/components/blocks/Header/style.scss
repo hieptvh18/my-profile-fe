@@ -53,3 +53,14 @@ header .resume-download button {
 header .resume-download span {
   font-size: 14px;
 }
+
+.header-wrapper.fixed{
+  position: fixed;  
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 99;
+   background: var(--bg-2);
+   box-shadow: 2px .2px 4px #888888;
+}

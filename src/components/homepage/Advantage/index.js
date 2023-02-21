@@ -34,26 +34,26 @@ const Advantage = (props) => {
             </div>
             <div className="items">
               <div className="item">
-                <div className="item-percent">100%</div>
-                <div className="item-title">PHP Language</div>
+                <div className="item-percent">90%</div>
+                <div className="item-title">Javascript Language</div>
+              </div>
+            </div>
+            <div className="items">
+              <div className="item">
+                <div className="item-percent">1%</div>
+                <div className="item-title">NodeJs Framework</div>
+              </div>
+            </div>
+            <div className="items">
+              <div className="item">
+                <div className="item-percent">2%</div>
+                <div className="item-title">ReactJs Framework</div>
               </div>
             </div>
             <div className="items">
               <div className="item">
                 <div className="item-percent">100%</div>
-                <div className="item-title">PHP Language</div>
-              </div>
-            </div>
-            <div className="items">
-              <div className="item">
-                <div className="item-percent">100%</div>
-                <div className="item-title">PHP Language</div>
-              </div>
-            </div>
-            <div className="items">
-              <div className="item">
-                <div className="item-percent">100%</div>
-                <div className="item-title">PHP Language</div>
+                <div className="item-title">Magento 2</div>
               </div>
             </div>
             <div className="items">

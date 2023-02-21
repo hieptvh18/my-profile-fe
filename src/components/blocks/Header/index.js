@@ -1,13 +1,26 @@
 import './style.scss';
 import React from "react";
+import { useEffect } from 'react';
 import "primeicons/primeicons.css";
 import logo from "../../../assets/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const Header = (props) => {
+  // handle scroll header fixed
+  useEffect(()=>{
+    window.onscroll = function(){
+      const headerEl = document.querySelector('.header-wrapper');
+      if(window.pageYOffset > headerEl.offsetTop){
+        headerEl.classList.add('fixed');
+      }else{
+        headerEl.classList.remove('fixed');
+      }   
+    }
+  },[])
+
   return (
-    <header className="d-flex justify-content-between align-items-center">
+    <header className="d-flex justify-content-between align-items-center" id='header'>
       <div className="logo-wrapper">
         <a
           href=""
