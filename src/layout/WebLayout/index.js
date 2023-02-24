@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import Header from "../../components/blocks/Header";
 import Footer from "../../components/blocks/Footer";
 import HomePage from "../../pages/client/Homepage";
+import Settings from "../../components/homepage/Setting";
 import ReactDOM from "react-dom";
 import './style.scss'; // style theme
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUp,faGears } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 const WebLayout = () => {
 
@@ -51,9 +52,7 @@ const WebLayout = () => {
         <FontAwesomeIcon icon={faArrowUp} />
       </button>
       {/* setting element */}
-      <div className="settings">
-        <FontAwesomeIcon className="settings-icon" icon={faGears} color="#fff" />
-      </div>
+      <Settings/>
     </>
   );
 };

@@ -1,0 +1,35 @@
+
+/* ===============setting========= */
+.settings{
+    position: fixed;
+    display: flex;
+    width: auto;
+    top: 40vh;
+    right: -160px;
+    border-radius: 10px;
+    transition: ease-in-out .3s;
+    color: #fff;  
+    .settings-icon{
+      cursor: pointer;
+      font-size: 30px;
+      color: rgb(206, 206, 206);
+      &:hover{
+       
+        transition: all .2s;
+      }
+    }
+    .setting-content{
+        margin-left: 40px;
+        padding: 10px 15px;
+        background-color:#555;
+        border-radius: 10px;
+        box-shadow: var(--outer-shadow);
+      .active{
+
+      }
+    }
+  }
+  .settings.active{
+      transform: translateX(-160px);
+      transition: ease-in-out .3s;
+  }

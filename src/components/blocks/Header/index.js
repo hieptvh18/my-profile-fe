@@ -35,32 +35,32 @@ const Header = (props) => {
       <div className="navbar">
         <ul className="d-flex justify-content-between">
           <li>
-            <a className="p-2 text-light active" href="">
+            <a className="text-light active" href="">
               Home
             </a>
           </li>
           <li>
-            <a className="p-2 text-light" href="#about">
+            <a className="text-light" href="#about">
               About
             </a>
           </li>
           <li>
-            <a className="p-2 text-light" href="#service">
+            <a className="text-light" href="#service">
               Service
             </a>
           </li>
           <li>
-            <a className="p-2 text-light" href="#my-experiences">
+            <a className="text-light" href="#my-experiences">
               Experience
             </a>
           </li>
           <li>
-            <a className="p-2 text-light" href="#contact">
+            <a className="text-light" href="#contact">
               Contact
             </a>
           </li>
           <li>
-            <a className="p-2 text-light" href="#myblog">
+            <a className="text-light" href="#myblog">
               My Blog
             </a>
           </li>

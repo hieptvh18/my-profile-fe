@@ -21,20 +21,26 @@ header .logo__text {
   text-decoration: none !important;
 }
 
-.navbar ul > li > a {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-}
-.navbar ul > li > a.active{
-  color: var(--oragect) !important;
-  border-bottom: solid 3px var(--oragect);
-}
-.navbar ul > li > a:hover {
-  color: var(--oragect) !important;
-  border-bottom: solid 3px var(--oragect);
-}
-header .resume-download {
+.navbar{
+  ul{
+    margin-bottom: 0;
+    li{
+      a{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 18px 12px;
+        &:hover{
+          color: var(--oragect) !important;
+          border-bottom: solid 3px var(--oragect);
+        }
+      }
+      a.active{
+        color: var(--oragect) !important;
+        border-bottom: solid 3px var(--oragect);
+      }
+    }
+  }
 }
 
 header .resume-download button {

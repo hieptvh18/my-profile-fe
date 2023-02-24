@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 import './style.scss';
 
 const Service = (props) =>{
@@ -30,9 +31,9 @@ const Service = (props) =>{
       <div className="service-tab__items d-flex justify-content-between">
         <div className="item">
           <div className="service-item-icon">
-            <img src="" alt="" />
+          <FontAwesomeIcon fontSize={"50px"} color="#fff" icon={faCode} />
           </div>
-          <h4 className="service-item__title">Graphic Design</h4>
+          <h4 className="service-item__title mt-4">Graphic Design</h4>
           <p className="service-item__desc">
             Explain to you how all this mistaken idea of denouncing
             pleasure born and give you complete account the system.
@@ -44,9 +45,9 @@ const Service = (props) =>{
         </div>
         <div className="item">
           <div className="service-item-icon">
-            <img src="" alt="" />
+            <FontAwesomeIcon fontSize={"50px"} color="#fff" icon={faCode} />
           </div>
-          <h4 className="service-item__title">Graphic Design</h4>
+          <h4 className="service-item__title mt-4">Graphic Design</h4>
           <p className="service-item__desc">
             Explain to you how all this mistaken idea of denouncing
             pleasure born and give you complete account the system.
@@ -58,9 +59,9 @@ const Service = (props) =>{
         </div>
         <div className="item">
           <div className="service-item-icon">
-            <img src="" alt="" />
+          <FontAwesomeIcon fontSize={"50px"} color="#fff" icon={faCode} />
           </div>
-          <h4 className="service-item__title">Graphic Design</h4>
+          <h4 className="service-item__title mt-4">Graphic Design</h4>
           <p className="service-item__desc">
             Explain to you how all this mistaken idea of denouncing
             pleasure born and give you complete account the system.
