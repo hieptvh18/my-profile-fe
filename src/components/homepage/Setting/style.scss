@@ -28,6 +28,31 @@
 
       }
     }
+    .setting-left__mode{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--bg-2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: var(--shadow-all);
+      margin-top: 15px;
+      cursor: pointer;
+      .dark{
+        
+      }
+      .light{
+
+      }
+      &:hover{
+        box-shadow: var(--shadow-all-1);
+        transition: all .3s;
+      }
+      .mode-icon{
+        font-size: 28px;
+      }
+    }
   }
   .settings.active{
       transform: translateX(-160px);

@@ -60,7 +60,7 @@
   .about__right-advantage-items .items {
     background: linear-gradient(
       180deg,
-      rgba(94, 255, 0, 0.6),
+      var(--oragect),
       var(--bg-1) 67.59%
     );
     width: 27.33%;
