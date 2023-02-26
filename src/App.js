@@ -13,7 +13,11 @@ function App(props) {
         <Route path="/" element={<WebLayout />}>
             
         </Route>
-        <Route path="/admin" element={<Login/>}/>
+        {/* route admin */}
+        <Route path="/admin" element={<Login/>}>
+          
+        </Route>
+        {/* route page error */}
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>

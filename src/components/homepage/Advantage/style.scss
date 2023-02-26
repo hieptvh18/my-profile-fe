@@ -3,6 +3,7 @@
 #about-wrapper{
   background: var(--bg-2);
   padding: 50px 0 50px 0;
+  height: 1000px;
 }
 #about {
   max-width: var(--max-width);
@@ -60,7 +61,7 @@
   .about__right-advantage-items .items {
     background: linear-gradient(
       180deg,
-      var(--oragect),
+      var(--oragect2),
       var(--bg-1) 67.59%
     );
     width: 27.33%;

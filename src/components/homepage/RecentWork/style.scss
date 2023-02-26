@@ -1,47 +1,77 @@
 /* ===========recent work */
-section#recent-work{
-    max-width: var(--max-width);
-    margin:140px auto ;
+section#recent-work {
+  position: relative;
+  max-width: var(--max-width);
+  margin: 0 auto;
 
-    .recent-work__top-left{
-        width: 100%;
+  .recent-work__detail {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .recent-item {
+    width: 28%;
+    height: 400px;
+    padding: 50px;
+    background: var(--bg-1);
+    box-shadow: 0px -1px 18px -3px #131313;
+    border-radius: 3px;
+    transition: ease 0.3s;
+    .recent-item__work-icon {
+      color: var(--oragect);
+      font-size: 45px;
+      margin-bottom: 30px;
     }
-    .recent-work__detail{
+    .recent-item__title {
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+    .recent-item__see-project {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      column-gap: 10px;
+      color: var(--oragect);
+      a{
+          color: var(--oragect);
+      }
+      svg{
+        color: var(--oragect);
+      }
+    cursor: pointer;
+    }
+    &:hover {
+    }
+  }
+  .recent-item.active {
+    width: 31%;
+    height: 470px;
+    transition: ease 0.3s;
+    background: var(--oragect2);
+    // font-size: 50px;
+    .recent-item__work-icon {
+        color: #fff;
+        font-size: 45px;
+        margin-bottom: 30px;
+      }
+    .recent-item__see-project {
         display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-    }
-    .recent-item{
-        width: 31.5%;
-        height: auto;
-
-        .work-name{
-            margin: 30px 0;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 10px;
+        a{
+            color: #fff;
         }
-        .work-sub-name{
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 3px;
-            color: #d8d8d8 ;
+        svg{
+          color: #fff;
         }
-        .box-img-recent{
-            &:hover img{
-                transform: scale(1.3);
-                transition: all .3s;
-            }
-            overflow: hidden;
-        }
-        
-    }
-    .recent-item img{
-        width: 100%;
-        object-fit: cover;
-        transition: all .3s;
-    }
-
-    .recent-work__right{
-        .icon-recent{
-
-        }
-    }
+      }
+  }
 }

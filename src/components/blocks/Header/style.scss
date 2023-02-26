@@ -50,7 +50,7 @@ header .resume-download button {
   align-items: center;
   border: 0;
   border-radius: 40px;
-  background: var(--oragect);
+  background: var(--oragect2);
   transition: opacity 0.5s ease-out;
   /* opacity: 0; */
   color: #fff;
@@ -66,7 +66,10 @@ header .resume-download span {
   left: 0;
   right: 0;
   margin: auto;
+  transition: all ease-in-out .3s;
+  padding: 10px 0;
   z-index: 99;
    background: var(--bg-2);
    box-shadow: 2px .2px 4px #888888;
+   opacity: 95%;
 }

@@ -14,9 +14,10 @@ const WebLayout = () => {
     const btnScrollTop = document.getElementById("scroll-top-btn");
     window.onscroll = function () {
       scrollFunction();
+      // scrollFixedHeader();
     };
 
-    // show btn
+    // show btn go to top
     const scrollFunction = () => {
       if (
         document.body.scrollTop > 20 ||
@@ -35,11 +36,19 @@ const WebLayout = () => {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
 
+  // handle scroll fixed header
+  const scrollFixedHeader = ()=>{
+    const headerEl = document.querySelector(".header-wrapper");
+    if (window.pageYOffset > headerEl.offsetTop) {
+      headerEl.classList.add("fixed");
+    } else {
+      headerEl.classList.remove("fixed");
+    }
+  }
+
   return (
     <>
-    <div className="header-wrapper">
       <Header />
-    </div>
       <main>
         <HomePage />
       </main>

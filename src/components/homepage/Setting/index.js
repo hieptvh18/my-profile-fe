@@ -27,9 +27,10 @@ const Settings = (props) => {
             color="#fff"
           />
         </div>
-        <div className={isDarkMode ? 'setting-left__mode dark' : 'setting-left__mode light'}>
+        <div 
+         onClick={handleMode}
+        className={isDarkMode ? 'setting-left__mode dark' : 'setting-left__mode light'}>
           <FontAwesomeIcon
-            onClick={handleMode}
             className="mode-icon"
             icon={isDarkMode ? faMoon : faSun}
             color="#fff"

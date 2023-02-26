@@ -12,9 +12,9 @@ const HomePage = (props) => {
     <>
       <BannerHome />
       <Advantage />
+      <RecentWork />
       <Service />
       <Experience />
-      <RecentWork />
       <Contact />
       <NewsWidget />
     </>

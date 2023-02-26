@@ -1,6 +1,6 @@
 #myblog-wrapper {
   background: var(--bg-2);
-  padding: 50px 0;
+  padding: 20px 0;
 }
 section#myblog {
   max-width: var(--max-width);
@@ -33,12 +33,28 @@ section#myblog {
     }
   }
   .blog-list {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-top: 140px;
+    .swiper,swiper-container{
+      padding-top: 80px;
+      padding-bottom: 50px;
+      .swiper-button-prev{
+
+      }
+      .swiper-button-next{
+
+      }
+      .swiper-pagination-bullet{
+        width: 12px;
+        height: 12px;
+        background: #ccc;
+      }
+      .swiper-pagination-bullet-active{
+        background: var(--oragect);
+      }
+    }
+    margin-top: 100px;
     .blog-item {
       position: relative;
-      width: 23%;
+      // width: 23%;
       height: 300px;
     //   overflow: hidden;
       object-fit: cover;
