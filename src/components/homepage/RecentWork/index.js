@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.scss";
-import Slider from "react-slick";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTabletScreenButton,

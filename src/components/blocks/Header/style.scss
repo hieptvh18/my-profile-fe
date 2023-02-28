@@ -25,19 +25,33 @@ header .logo__text {
   ul{
     margin-bottom: 0;
     li{
+      
       a{
+        position: relative;
         color: #fff;
         font-size: 16px;
         font-weight: 500;
         padding: 18px 12px;
+        transition: ease-in-out .5s;
+        &::before{
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0%;
+          height: 3px; 
+          background: var(--oragect);
+        }
         &:hover{
           color: var(--oragect) !important;
-          border-bottom: solid 3px var(--oragect);
+          &::before{
+            width: 100%;
+            transition: ease-in-out .3s;
+          }
         }
       }
       a.active{
         color: var(--oragect) !important;
-        border-bottom: solid 3px var(--oragect);
       }
     }
   }

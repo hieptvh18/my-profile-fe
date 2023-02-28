@@ -5,6 +5,9 @@ import { Route, Routes } from "react-router-dom";
 import WebLayout from './layout/WebLayout';
 import Login from "./pages/admin/Login";
 import PageNotFound from "./pages/client/Error/PageNotFound"
+import Dashboard from "./pages/admin/Dashboard";
+import AdminLayout from "./layout/AdminLayout";
+import Contact from "./components/admin/Contact";
 
 function App(props) {
   return (
@@ -14,8 +17,9 @@ function App(props) {
             
         </Route>
         {/* route admin */}
-        <Route path="/admin" element={<Login/>}>
-          
+        <Route path="/admin" element={<AdminLayout/>}>
+          <Route path="dashboard" element={<Dashboard/>}></Route>
+          <Route path="contact" element={<Contact/>}></Route>
         </Route>
         {/* route page error */}
         <Route path="*" element={<PageNotFound />} />

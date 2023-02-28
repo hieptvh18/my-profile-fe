@@ -6,7 +6,7 @@ section#recent-work {
 
   .recent-work__detail {
     position: absolute;
-    top: -200px;
+    top: -250px;
     left: 0;
     right: 0;
     display: flex;
@@ -21,7 +21,7 @@ section#recent-work {
     padding: 50px;
     background: var(--bg-1);
     box-shadow: 0px -1px 18px -3px #131313;
-    border-radius: 3px;
+    border-radius: 5px;
     transition: ease 0.3s;
     .recent-item__work-icon {
       color: var(--oragect);
