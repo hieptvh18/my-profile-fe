@@ -8,6 +8,7 @@ import PageNotFound from "./pages/client/Error/PageNotFound"
 import Dashboard from "./pages/admin/Dashboard";
 import AdminLayout from "./layout/AdminLayout";
 import Contact from "./components/admin/Contact";
+import Profile from "./components/admin/Profile";
 
 function App(props) {
   return (
@@ -20,7 +21,10 @@ function App(props) {
         <Route path="/admin" element={<AdminLayout/>}>
           <Route path="dashboard" element={<Dashboard/>}></Route>
           <Route path="contact" element={<Contact/>}></Route>
+          <Route path="profile" element={<Profile/>}></Route>
         </Route>
+        {/* route page login admin */}
+        <Route path="login" element={<Login/>}></Route>
         {/* route page error */}
         <Route path="*" element={<PageNotFound />} />
       </Routes>

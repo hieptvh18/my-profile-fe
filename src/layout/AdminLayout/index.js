@@ -30,9 +30,7 @@ const AdminLayout = () => {
           </div>
         </div>
       </header>
-      <section className="page-title">
-        <h4>Contact Manage</h4>
-      </section>
+      
       <section className="row">
         <aside className="main-content__sidebar col-2">
           <ul className="">
@@ -42,7 +40,7 @@ const AdminLayout = () => {
               </a>
             </li>
             <li className="sidebar-nav__item">
-              <a href="" className="sidebar-nav__item-link">
+              <a href="/admin/profile" className="sidebar-nav__item-link">
                 Profile
               </a>
             </li>

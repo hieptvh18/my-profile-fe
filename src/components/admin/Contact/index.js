@@ -1,32 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReply } from "@fortawesome/free-solid-svg-icons";
-import axios from "axios";
+import { getContacts } from "../../../api/Contact";
 
 const Contact = () => {
-  const apiGetContactsUrl = "http://localhost:5000/api/list-all-contact";
   const [contactData, setContactData] = useState([]);
 
   useEffect(() => {
-    var requestOptions = {
-      method: "GET",
-      redirect: "follow",
-    };
-
-    fetch(apiGetContactsUrl, requestOptions)
-      .then((response) => response.json())
-      .then((result) => {
-        console.log(result.data);
-        console.log(result.data.length);
-
-        setContactData(result.data);
-        console.log(contactData)
-      })
-      .catch((error) => console.log("error", error));
+    // fetch data from api contact
+    const contactDatas = async ()=>{
+      const response = await getContacts();
+      setContactData(response.data.data);
+    }
+    contactDatas();
   }, []);
 
   return (
     <section className="contact-wrapper">
+      <h2>Contact manage</h2>
       <table className="table table-bordered table-responsive">
         <thead>
           <tr>
