@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./style.scss";
+import { authLogin } from "../../../api/User";
 
 const Login = (props) => {
   const [email, setEmail] = useState("");
@@ -7,16 +8,28 @@ const Login = (props) => {
   const [errEmail, setErrEmail] = useState("");
   const [errPass, setErrPass] = useState("");
 
-  const clickLogin = () => {
+  const onLogin = (e) => {
+    e.preventDefault();
     if (email === "" || pass === '') {
       setErrEmail('Email is required!');
       setErrPass('Password is required!');
       return;
     }
     // re check authen from api
-
-    window.location.href = "admin/dashboard";
-    alert("login success");
+    const loginData = {
+      email:email,
+      password: pass
+    }
+    
+    authLogin(JSON.stringify(loginData))
+    .then(response=>{
+      console.log(response)
+      // window.location.href = "admin/dashboard";
+      alert("login success");
+    })
+    .catch(err=>{
+      console.log(err);
+    })
   };
 
   // save info email to cookie
@@ -68,7 +81,7 @@ const Login = (props) => {
       <div className="container">
         <span className="error animated tada" id="msg"></span>
         <form
-          action="/login/post"
+          onSubmit={onLogin}
           method="post"
           name="form1"
           className="box box-login"
@@ -83,7 +96,6 @@ const Login = (props) => {
             placeholder="Email"
             autoComplete="off"
             onChange={validate}
-            required
           />
           <p className="error error-email text-danger">
             {errEmail ?? errEmail}
@@ -95,7 +107,6 @@ const Login = (props) => {
             placeholder="Passsword"
             id="pwd"
             autoComplete="off"
-            required
           />
           <p className="error error-email text-danger">
             {errPass ?? errPass}
@@ -111,8 +122,7 @@ const Login = (props) => {
             Forget Password?
           </a>
           <input
-            onClick={clickLogin}
-            type="button"
+            type="submit"
             value="Sign in"
             className="btn1 mb-3 mt-3 btn-login"
           />
