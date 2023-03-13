@@ -18,17 +18,39 @@ section#myblog {
       display: flex;
       justify-content: space-between;
       a.link {
+        position: relative;
         padding: 10px 15px;
         // font-size: 18px;
         color: #fff;
-        &:hover {
+        &::before{
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0%;
+          height: 3px; 
+          background: var(--oragect);
+        transition: ease-in-out .3s;
+        }
+        &:hover{
           color: var(--oragect) !important;
-          border-bottom: solid 3px var(--oragect);
+          &::before{
+            width: 100%;
+            transition: ease-in-out .3s;
+          }
         }
       }
       a.link.active {
-        color: var(--oragect) !important;
-        border-bottom: solid 3px var(--oragect);
+        color:var(--oragect);
+        &::before{
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 3px; 
+          background: var(--oragect);
+        }
       }
     }
   }
