@@ -127,3 +127,23 @@ main {
     font-size: 18px; /* Increase font size */
 }
 
+// =================== responsive 
+//  responsive style
+// màn hình laptop máy tính loại tô
+@media (min-width: 1025px) {
+  
+}
+
+//  màn hình medium thông thường
+@media (max-width: 1024px){
+  
+}
+// màn hình tablet
+@media (max-width: 768px){
+  
+}
+
+// màn hình điện thoại
+@media (max-width: 480px){
+
+}

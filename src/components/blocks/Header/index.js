@@ -1,5 +1,5 @@
 import "./style.scss";
-import React from "react";
+import React, { useState } from "react";
 import { useEffect } from "react";
 import "primeicons/primeicons.css";
 import logo from "../../../assets/images/logo.png";
@@ -8,6 +8,15 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const Header = (props) => {
   // handle scroll header fixed
+  const [activeNavbar, setActiveNavbar] = useState(false);
+
+  const clickBars = () =>{
+    setActiveNavbar(true);
+  }
+
+  const clickCloseBars = () =>{
+    setActiveNavbar(false);
+  }
 
   return (
     <div className="header-wrapper">
@@ -26,7 +35,7 @@ const Header = (props) => {
             <span className="logo__text text-light ml-2">Hiep</span>
           </a>
         </div>
-        <div className="navbar">
+        <div className={activeNavbar ? "navbar active" : "navbar"}>
           <ul className="d-flex justify-content-between">
             <li>
               <a className="text-light active" href="">
@@ -59,6 +68,7 @@ const Header = (props) => {
               </a>
             </li>
           </ul>
+          <div className="close" onClick={clickCloseBars}></div>
         </div>
         <div className="resume-download">
           <button id="btn-dl-resume">
@@ -67,6 +77,7 @@ const Header = (props) => {
             </span>
             <FontAwesomeIcon icon={faArrowDown} />
           </button>
+          <div className="navbar-responsive" onClick={clickBars} ></div>
         </div>
       </header>
     </div>
