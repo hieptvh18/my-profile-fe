@@ -93,7 +93,7 @@ header .resume-download span {
 // màn hình laptop máy tính loại tô
 @media (min-width: 1025px) {
   body{
-    background: red !important;
+    
   }
 }
 
@@ -122,7 +122,6 @@ header .resume-download span {
     }
     .navbar.active{ // active
       display: block;
-      right: 0;
       transition: ease-in-out 1s;
 
       ul{

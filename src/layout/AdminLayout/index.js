@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import './style.scss'
+import './style.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { Dropdown } from "bootstrap";
