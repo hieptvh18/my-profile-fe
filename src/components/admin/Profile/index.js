@@ -245,8 +245,8 @@ const Profile = () => {
           <label htmlFor="address" className="form-label">
             Address
           </label>
-          <textarea className="form-control" name="address">
-            {user.address ?? user.address}
+          <textarea className="form-control" defaultValue={user.address && user.address} name="address">
+            
           </textarea>
         </div>
         <div className="mb-3">

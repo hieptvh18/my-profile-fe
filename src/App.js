@@ -14,6 +14,7 @@ function App(props) {
   return (
     <div className="App">
       <Routes>
+        {/* route frontend */}
         <Route path="/" element={<WebLayout />}>
             
         </Route>

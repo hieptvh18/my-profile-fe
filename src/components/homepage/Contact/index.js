@@ -15,8 +15,8 @@ const Contact = (props)=>{
         </div>
       </div>
     </div>
-    <div className="contact-content">
-      <div className="form-contact col-12 col-lg-7">
+    <div className="row contact-content">
+      <div className="form-contact col-12 col-md-7 col-lg-7">
         <h4 className="font-weight-bold text-center mb-5">Get In Touch</h4>
         <form action="" method="POST">
           <div className="row">
@@ -61,7 +61,7 @@ const Contact = (props)=>{
           </button>
         </form>
       </div>
-      <div className="contact__right col-12 col-lg-5">
+      <div className="contact__right col-12 col-md-5 col-lg-5">
         <div className="contact-right__item">
           <h4 className="contact-item__title">155 Cau Giay, Ha Noi</h4>
           <div className="d-flex align-items-center">

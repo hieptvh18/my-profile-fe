@@ -115,6 +115,14 @@ const Contact = () => {
                     placeholder="Enter message"
                   ></textarea>
                 </div>
+
+                <div className="mb-3">
+                  <label htmlFor="sendFile" className="form-label">
+                    Send File
+                  </label>
+                  <input type="file" className="form-control" name="send_file"/>
+                </div>
+
                 <div className="mb-3 form-check">
                   <input
                     type="checkbox"

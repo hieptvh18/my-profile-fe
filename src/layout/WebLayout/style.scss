@@ -128,22 +128,149 @@ main {
 }
 
 // =================== responsive 
+
 //  responsive style
 // màn hình laptop máy tính loại tô
 @media (min-width: 1025px) {
-  
+  body{
+    
+  }
 }
 
 //  màn hình medium thông thường
 @media (max-width: 1024px){
-  
+  body{
+    
+  }
+  .header-wrapper{
+    
+  }
+
+  header{
+    position: relative;
+    padding: 10px 20px;
+    .navbar{
+      display: none;
+      position: absolute;
+      top: 0;
+      right: -1px;
+      background-color: var(--bg-2) ;
+      height: 100vh;
+      z-index: 99;
+      box-shadow: inset 0 0 10px #444;
+      transition: ease-in-out 1s;
+    }
+    .navbar.active{ // active
+      display: block;
+      transition: ease-in-out 1s;
+
+      ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        padding:  50px;
+      }
+
+      .close{
+        position: absolute;
+        top: 10px;
+        left:10px ;
+        color: #fff;
+        display: block;
+        &::before{
+          content: "Close";
+        }
+
+      }
+      
+    }
+    .resume-download{
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      .navbar-responsive::after{
+        content: 'navbar';
+        color:#fff;
+      }
+    }
+  }
+
+  main{
+    .banner{
+      padding: 0 20px;
+      .banner__right{
+        .my-avatar{
+          width: 100%;
+          height: auto;
+
+          img{
+
+          }
+        }
+      }
+    }
+
+    #about-wrapper{
+      height: 1200px ;
+
+      .about__right-advantage-items .items{
+        width: 43%;
+      }
+    }
+
+    #recent-work{
+      .recent-work__detail{
+        margin-top: 160px !important;
+        top: -380px !important;
+        padding: 0 20px ;
+      }
+    }
+    #my-experiences-wrapper{
+      padding:0 20px;
+    }
+    #service{
+      margin: 90px auto 130px auto !important;
+    }
+
+    #contact{
+      .contact-content{
+        padding: 20px;
+        column-gap: 0;
+        .form-contact{
+
+        }
+
+        .contact__right{
+          width: 37.7%;
+        }
+      }
+    }
+
+    #myblog-wrapper{
+      padding: 0 20px;
+    }
+  }
+
+  footer{
+    padding: 20px;
+
+    .box-email{
+      input[name="newsletter"]{
+        width: 100%;
+      }
+    }
+  }
 }
 // màn hình tablet
 @media (max-width: 768px){
-  
+  body{
+    background: green !important;
+  }
 }
 
 // màn hình điện thoại
 @media (max-width: 480px){
-
+  body{
+    background: blue !important;
+  }
 }
