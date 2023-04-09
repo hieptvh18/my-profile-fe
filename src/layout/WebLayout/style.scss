@@ -214,7 +214,10 @@ main {
       height: 1200px ;
 
       .about__right-advantage-items .items{
-        width: 43%;
+        width: 40%;
+      }
+      .experience__detail{
+        right: revert !important;
       }
     }
 
@@ -264,7 +267,31 @@ main {
 // màn hình tablet
 @media (max-width: 768px){
   body{
-    background: green !important;
+
+    #about-wrapper{
+      height: 1550px;
+    }
+    section#about{
+      .about__left-experience{
+        max-width: revert !important;
+      }
+
+      .about__right{
+        padding: 30px 20px;
+        .about__right-advantage-items .items{
+          width: 45%;
+        }
+      }
+    }
+
+    #contact{
+      .contact__right{
+        margin-top: 30px;
+        width: 100% !important;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
   }
 }
 

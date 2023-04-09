@@ -26,13 +26,10 @@ const Login = (props) => {
 
     authLogin(loginData)
       .then((response) => {
-        console.log(response);
         if (response.data.status === "success") {
-
-          // save token jwt in localStorage -> moi lan can lay data khi login thi ban kem theo token o phan header cua api
           localStorage.setItem('tokenLogin',response.data.token)
-
           alert("login success");
+          window.location.href = '/admin';
           setError("");
           return;
         }
@@ -40,7 +37,6 @@ const Login = (props) => {
       })
       .catch((err) => {
         setError("");
-        console.log(err);
       });
   };
 

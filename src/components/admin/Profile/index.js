@@ -46,11 +46,8 @@ const Profile = () => {
         delete formProps.cv;
       }
 
-      console.log(formProps);
-
       updateUser(formProps)
       .then(res=>{
-        console.log(res)
         setMessage({message:res.data.message,status:res.data.status})
       })
       .catch(err=>{
