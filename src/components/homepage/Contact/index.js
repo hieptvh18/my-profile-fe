@@ -16,7 +16,7 @@ const Contact = (props)=>{
       </div>
     </div>
     <div className="row contact-content">
-      <div className="form-contact col-12 col-md-7 col-lg-7">
+      <div className="form-contact col-12 col-xs-12 col-sm-12 col-md-7 col-lg-7">
         <h4 className="font-weight-bold text-center mb-5">Get In Touch</h4>
         <form action="" method="POST">
           <div className="row">

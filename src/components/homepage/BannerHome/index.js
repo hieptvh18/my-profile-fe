@@ -75,7 +75,7 @@ const BannerHome = (props) => {
           </div>
           <div className="my-avatar__item item4">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png"
               title="Angular logo"
               alt=""
             />

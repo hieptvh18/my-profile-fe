@@ -72,9 +72,14 @@ const Header = (props) => {
         </div>
         <div className="resume-download">
           <button id="btn-dl-resume">
-            <span className="mr-2" style={{ marginRight: "2px" }}>
+            <a
+            href="https://firebasestorage.googleapis.com/v0/b/resume-react-8e97f.appspot.com/o/Tran-Van-Hoang-Hiep_Junior-PHP-Developer.pdf?alt=media&token=e0066a56-80d2-4352-a5d2-bc4b988fd5c9&_gl=1*v0uyit*_ga*OTQwOTgwODkzLjE2OTYyMTE5MDk.*_ga_CW55HF8NVT*MTY5OTQzNjAzMy4yMi4xLjE2OTk0MzYyODMuNDEuMC4w"
+            download="Example-PDF-document"
+            target="_blank"
+            rel="noreferrer"
+             className="mr-2" style={{ marginRight: "2px" }}>
               Resume
-            </span>
+            </a>
             <FontAwesomeIcon icon={faArrowDown} />
           </button>
           <div className="navbar-responsive" onClick={clickBars} ></div>

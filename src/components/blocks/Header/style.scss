@@ -69,9 +69,18 @@ header .resume-download button {
   /* opacity: 0; */
   color: #fff;
   text-align: center;
+
+  &:hover{
+    transition: all .3s;
+      svg{
+        transition: all .3s;
+        transform: translateY(5px);
+      }
+  }
 }
-header .resume-download span {
+header .resume-download a {
   font-size: 14px;
+  color: #fff;
 }
 
 .header-wrapper.fixed{
