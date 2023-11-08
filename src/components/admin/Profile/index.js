@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./style.scss";
 import { getUser } from "../../../api/User";
-import { image } from "@cloudinary/url-gen/qualifiers/source";
 import { updateUser } from "../../../api/User";
 
 const Profile = () => {
