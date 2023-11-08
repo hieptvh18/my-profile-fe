@@ -10,8 +10,7 @@ const Contact = (props)=>{
       <div className="col-6">
         <h2 className="contact-title title">Let's Talk</h2>
         <div className="intro-title">
-          Must explain to you how all this mistaken idea of denouncing
-          pleasure born and give you a complete account the system
+        Connect with me so we can work together.
         </div>
       </div>
     </div>
@@ -26,6 +25,7 @@ const Contact = (props)=>{
                 className=""
                 name="name"
                 placeholder="Your Name"
+                required
               />
             </div>
             <div className="form-group col-12 col-sm-12 col-md-6 col-lg-6">
@@ -34,6 +34,7 @@ const Contact = (props)=>{
                 className=""
                 name="email"
                 placeholder="Your Email"
+                required
               />
             </div>
           </div>
@@ -54,6 +55,7 @@ const Contact = (props)=>{
               cols="30"
               rows="8"
               placeholder="Message"
+              required
             ></textarea>
           </div>
           <button className="btn-submit-contact mt-4" type="submit">
@@ -66,14 +68,14 @@ const Contact = (props)=>{
           <h4 className="contact-item__title">155 Cau Giay, Ha Noi</h4>
           <div className="d-flex align-items-center">
             <div className="icon icon-address"><FontAwesomeIcon color="#fff" fontSize={"40px"} icon={faLocationDot}/></div>
-            <span className="sub-title_contact-title">Office Address</span>
+            <span className="sub-title_contact-title">Address</span>
           </div>
         </div>
         <div className="contact-right__item">
-          <h4 className="contact-item__title">155 Cau Giay, Ha Noi</h4>
+          <h4 className="contact-item__title">hieptvh18@gmail.com</h4>
           <div className="d-flex align-items-center">
             <div className="icon icon-address"><FontAwesomeIcon color="#fff" fontSize={"40px"} icon={faEnvelope} /></div>
-            <span className="sub-title_contact-title">Office Address</span>
+            <span className="sub-title_contact-title">Email</span>
           </div>
         </div>
         <div className="contact-right__item">

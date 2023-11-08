@@ -31,11 +31,11 @@ const BannerHome = (props) => {
               />
           </h2>
           <h4 className="job animate__animated animate__backInLeft animate__delay-1s mt-4 mb-4">
-            IT nhung khong biet cai Win =))
+          Currently a Junior PHP Developer
+            {/* IT nhung khong biet cai Win =)) */}
           </h4>
           <p className="intro col-6 col-md-6 col-lg-9">
-            Must explain to how all this mistaken idea denouncing pleasure pain
-            the system and expound the actua.
+            I have more than 1 year of experience working with PHP-Laravel, PHP-Magento, Javascript
           </p>
           <button className="hire-me">
             <FontAwesomeIcon className="icon-hireme" icon={faArrowRight} />

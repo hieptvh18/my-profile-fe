@@ -29,19 +29,19 @@ const Footer = (props) => {
             With the Release Process
           </p>
           <div className="footer-social">
-            <a href="" className="footer-social__item" title="facebook">
+            <a href="https://www.facebook.com/tvhh18" className="footer-social__item" title="facebook">
             <FontAwesomeIcon color="#fff" fontSize={"24px"} icon={faFacebook}/>
             </a>
-            <a href="" className="footer-social__item" title="Google">
+            <a href="mailto:hieptvh@gmail.com" className="footer-social__item" title="Google">
             <FontAwesomeIcon color="#fff" fontSize={"24px"} icon={faGoogle}/>
             </a>
-            <a href="" className="footer-social__item" title="github">
+            <a href="https://github.com/hieptvh18/" className="footer-social__item" title="github">
             <FontAwesomeIcon color="#fff" fontSize={"24px"} icon={faGithub}/>
             </a>
             <a href="" className="footer-social__item" title="Twittwer">
             <FontAwesomeIcon color="#fff" fontSize={"24px"} icon={faTwitter}/>
             </a>
-            <a href="" className="footer-social__item" title="Skype">
+            <a href="hieptvh18" className="footer-social__item" title="Skype">
             <FontAwesomeIcon color="#fff" fontSize={"24px"} icon={faSkype}/>
             </a>
           </div>
@@ -73,7 +73,7 @@ const Footer = (props) => {
               <a href="#">Web developer</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a href="#">Freelancer</a>
             </li>
             <li>
               <a href="#" className="active">Recent Post</a>

@@ -33,7 +33,7 @@ const Service = (props) =>{
           <div className="service-item-icon">
           <FontAwesomeIcon fontSize={"50px"} color="#fff" icon={faCode} />
           </div>
-          <h4 className="service-item__title mt-4">Graphic Design</h4>
+          <h4 className="service-item__title mt-4">Freelancer PHP Developer</h4>
           <p className="service-item__desc">
             Explain to you how all this mistaken idea of denouncing
             pleasure born and give you complete account the system.
@@ -47,7 +47,7 @@ const Service = (props) =>{
           <div className="service-item-icon">
             <FontAwesomeIcon fontSize={"50px"} color="#fff" icon={faCode} />
           </div>
-          <h4 className="service-item__title mt-4">Graphic Design</h4>
+          <h4 className="service-item__title mt-4">Web design</h4>
           <p className="service-item__desc">
             Explain to you how all this mistaken idea of denouncing
             pleasure born and give you complete account the system.
@@ -61,7 +61,7 @@ const Service = (props) =>{
           <div className="service-item-icon">
           <FontAwesomeIcon fontSize={"50px"} color="#fff" icon={faCode} />
           </div>
-          <h4 className="service-item__title mt-4">Graphic Design</h4>
+          <h4 className="service-item__title mt-4">Laravel Developer</h4>
           <p className="service-item__desc">
             Explain to you how all this mistaken idea of denouncing
             pleasure born and give you complete account the system.
