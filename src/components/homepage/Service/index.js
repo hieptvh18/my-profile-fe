@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import './style.scss';
+import { Fade } from "react-reveal";
 
 const Service = (props) =>{
     return (<section id="service" className="">
@@ -28,50 +29,52 @@ const Service = (props) =>{
         </li>
       </ul>
 
-      <div className="service-tab__items d-flex justify-content-between">
-        <div className="item">
-          <div className="service-item-icon">
-          <FontAwesomeIcon fontSize={"50px"} color="#fff" icon={faCode} />
-          </div>
-          <h4 className="service-item__title mt-4">Freelancer PHP Developer</h4>
-          <p className="service-item__desc">
-            Explain to you how all this mistaken idea of denouncing
-            pleasure born and give you complete account the system.
-          </p>
-          <button className="learn-more-service-item">
-            <FontAwesomeIcon icon={faArrowRight}/>
-            <span>Learn more</span>
-          </button>
-        </div>
-        <div className="item">
-          <div className="service-item-icon">
+      <Fade left>
+        <div className="service-tab__items d-flex justify-content-between">
+          <div className="item">
+            <div className="service-item-icon">
             <FontAwesomeIcon fontSize={"50px"} color="#fff" icon={faCode} />
+            </div>
+            <h4 className="service-item__title mt-4">Freelancer PHP Developer</h4>
+            <p className="service-item__desc">
+              Explain to you how all this mistaken idea of denouncing
+              pleasure born and give you complete account the system.
+            </p>
+            <button className="learn-more-service-item">
+              <FontAwesomeIcon icon={faArrowRight}/>
+              <span>Learn more</span>
+            </button>
           </div>
-          <h4 className="service-item__title mt-4">Web design</h4>
-          <p className="service-item__desc">
-            Explain to you how all this mistaken idea of denouncing
-            pleasure born and give you complete account the system.
-          </p>
-          <button className="learn-more-service-item">
-            <FontAwesomeIcon icon={faArrowRight}/>
-            <span>Learn more</span>
-          </button>
-        </div>
-        <div className="item">
-          <div className="service-item-icon">
-          <FontAwesomeIcon fontSize={"50px"} color="#fff" icon={faCode} />
+          <div className="item">
+            <div className="service-item-icon">
+              <FontAwesomeIcon fontSize={"50px"} color="#fff" icon={faCode} />
+            </div>
+            <h4 className="service-item__title mt-4">Web design</h4>
+            <p className="service-item__desc">
+              Explain to you how all this mistaken idea of denouncing
+              pleasure born and give you complete account the system.
+            </p>
+            <button className="learn-more-service-item">
+              <FontAwesomeIcon icon={faArrowRight}/>
+              <span>Learn more</span>
+            </button>
           </div>
-          <h4 className="service-item__title mt-4">Laravel Developer</h4>
-          <p className="service-item__desc">
-            Explain to you how all this mistaken idea of denouncing
-            pleasure born and give you complete account the system.
-          </p>
-          <button className="learn-more-service-item">
-            <FontAwesomeIcon icon={faArrowRight}/>
-            <span>Learn more</span>
-          </button>
+          <div className="item">
+            <div className="service-item-icon">
+            <FontAwesomeIcon fontSize={"50px"} color="#fff" icon={faCode} />
+            </div>
+            <h4 className="service-item__title mt-4">Laravel Developer</h4>
+            <p className="service-item__desc">
+              Explain to you how all this mistaken idea of denouncing
+              pleasure born and give you complete account the system.
+            </p>
+            <button className="learn-more-service-item">
+              <FontAwesomeIcon icon={faArrowRight}/>
+              <span>Learn more</span>
+            </button>
+          </div>
         </div>
-      </div>
+      </Fade>
     </div>
   </section>)
 }
